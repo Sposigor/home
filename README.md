@@ -1,11 +1,11 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h1 align="center">Developer's Portfolio ✨</h1>
+  <h1 align="center"> Portifolio para Desenvolvedor ✨</h1>
 
   <p align="center">
-    It is a personal static website/portfolio template hosted with GitHub Pages, built to showcase my recent projects. Site URL / Demo: 
-    <a href="https://hashirshoaeb.github.io">hashirshoaeb.github.io</a>
+    Site pessoal para apresentação dos projetos. Site URL / Demo: 
+    <a href="https://sposigor.github.io/spos.github.io/">sposigor.github.io</a>
     <br />
     <br />
     <a href="https://hashirshoaeb.com">About Me</a>
@@ -23,24 +23,26 @@
 [![GitHub license](https://img.shields.io/github/license/hashirshoaeb/home?style=for-the-badge)](https://github.com/hashirshoaeb/home/blob/master/LICENSE)
 [![Twitter Follow](https://img.shields.io/twitter/follow/hashirshoaeb?color=ffcc66&logo=twitter&logoColor=ffffff&style=for-the-badge)](https://twitter.com/hashirshoaeb)
 
-[![Site preview](/public/social-image.png)](https://hashirshoaeb.github.io/)
+[![Site preview](/public/social-image.png)](https://sposigor.github.io/spos.github.io/)
 
-## Table of Contents
+## Sumário
 
-- [Technology Stack 🛠️](#technology-stack-)
-- [Structure ⚓](#structure-)
-- [Sharing 💗](#sharing-)
-- [Prerequisites 🍪](#prerequisites-)
-- [Setup And Deployment 🔧](#setup-and-deployment-)
-- [Contributing 🙌](#contributing-)
-- [Issues](#issues)
-- [Upcoming Features / Improvements 🔗](#upcoming-features-/-improvements-)
+- [Tecnologias Utilizadas 🛠️](#tecnologias-utilizadas-)
+- [Estrutura ⚓](#estrutura-)
+- [Compartilhando💗](#compartilhando-)
+- [Pré-requisitos🍪](#pré-requisitos)
+- [Setup E Deployment 🔧](#setup-e-deployment-)
+- [Contribuindo🙌](#contribuindo-)
+- [Problemas](#problemas)
+- [Próximas Features / Melhorias 🔗](#próximas-features--melhorias-)
 - [Showcase 🚀](#showcase-)
 - [Versão em Português :brazil:](#versao-em-portugues-)
+- [Contributors ✨](#contributors-)
+- [License 📄](#license-)
 
-## Technology Stack 🛠️
+## Tecnologias Utilizadas 🛠️
 
-Dependencies defined in package.json:
+Dependencias definidas no package.json:
 
 [Reactjs](https://reactjs.org/)
 | [Bootstrap](https://getbootstrap.com/)
@@ -48,109 +50,108 @@ Dependencies defined in package.json:
 | [GitHub API](https://developer.github.com/v3/repos/)
 | [Instagram API](https://www.instagram.com/developer/embedding/)
 
-## Structure ⚓
+## Estrutura ⚓
 
-- Navigation bar (optional)
-- Body
-  - Name | Profession
-  - Contact / Follow / Find me / Facebook / LinkedIn / GitHub / Instagram / Email / CodePen
-  - Resume | About me
-- About Me
-  - Display picture (optional)
-  - About myself, my Interests, Goals and Hobbies
-  - Things I'm good at (Skills)
-  - Resume button
-- Recent Projects (using GitHub API) (optional)
-- Leadership (optional)
-  - Paragraph
-  - Carousel images
-- Skills (optional)
-  - Technical Skills
-  - Soft Skills
-- Footer
-  - Footer Note (optional)
+- Navigation bar (opicional)
+- Blog (opicional)
+- Body [corpo]
+  - Nome | Profissão
+  - Contato / Follow / Find me / Facebook / LinkedIn / GitHub / Instagram / Email / CodePen
+  - Currículo | Sobre mim
+-  Sobre mim
+  - Foto de perfil (usando API do Instagram) (opicional)
+  - Sobre mim, meus interesses Metas e Hobbies
+  - Coisas em que sou bom (Skills)
+- Projetos Recentes (usando API do GitHub) (opicional)
+- Footer [rodapé]
+  - Reconhecimentos (contribuidores)
   - Copyrights - open source
-  - Acknowledgements(
+  - (citação: Sonhe grande, Pense grande)
 
-## Sharing 💗
+## Compartilhando 💗
 
-Project is open source. Feel free to make your own version. All you need to do is to fork this repository, edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) and add resume. Mark star ⭐ if you like the project.
+O projeto é open-souce. Fique a vontade para fazer sua própria versão. Tudo o que você precisa fazer é criar um fork, editar [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json) e adicionar seu Currículo. Se você gostou do projeto, dê uma ⭐.
 
-## Prerequisites 🍪
+## Pré-requisitos🍪
 
-You should have [Node.js](https://nodejs.org/en/) and [Git](https://git-scm.com/) installed on your PC. You should also own a GitHub account.
+Você precisa ter o [Node.js](https://nodejs.org/en/) e o  [Git](https://git-scm.com/) instalados no seu PC. Você tambem deve ter uma conta no GItHub.
 
-## Setup And Deployment 🔧
+## Setup E Deployment 🔧
 
-1. To Get Started, Fork this repository to your GitHub account:
-2. Clone the forked repo from your account using:
+1. Para começar, crie um fork deste repositório na sua conta:
+2. Clone o repositório que você acabou de fazer um fork usando:
 
    ```bash
-     git clone https://github.com/<your-username>/home.git
+     git clone https://github.com/<seu-username>/home.git
    ```
 
-3. Open in editor and edit [src/editable-stuff/config.js](./src/editable-stuff/config.js) file.
+3. Abra em um editor e altere o arquivo [src/editable-stuff/configurations.json](./src/editable-stuff/configurations.json).
 
-4. Add your resume as <resume.pdf> in place of [src/editable-stuff/resume.pdf](./src/editable-stuff/)
-
-5. Edit [title](./public/index.html#L34) and meta [description](./public/index.html#L13) in [public/index.html](./public/index.html).
-6. Change URL in [package.json](./package.json) file:
+4. Adicione o seu currículo como <resume.pdf> no lugar de [src/editable-stuff/resume.pdf](./src/editable-stuff/)
+5. Altere a URL no arquivo [package.json](./package.json):
 
    ```json
-    "homepage": "https://<your-username>.github.io/home"
+   "homepage": "https://<seu-username>.github.io/home"
    ```
 
-   Or for deployment at custom domain, refer [create-react-app.dev](https://create-react-app.dev/docs/deployment/#step-1-add-homepage-to-packagejson)
+   Ou, para um deployment customizado,  leia [create-react-app.dev](https://create-react-app.dev/docs/deployment/)
 
-7. After editing run the following bash commands:
+6. Edite [title](./public/index.html#L34) e meta [description](./public/index.html#L13) no [public/index.html](./public/index.html).
+
+7. Após a edição, rode os seguintes comandos bash:
 
    ```bash
    npm install
    npm start
    ```
 
-8. To deploy website, run:
+8. Para dar deploy 
 
    ```bash
     npm run build
     npm run deploy
    ```
 
-   Or for deployment at \<username>.github.io, refer [READMEdocs/custom-deployment.md](./READMEdocs/custom-deployment.md) and [pages.js](./pages.js)
+   Ou para deployment customizado alterar [pages.js](./pages.js)
 
-9. Congrats your site is up and running. To see it live, visit:
+   ```bash
+    npm run build
+    npm run custom-deploy
+   ```
+
+9. Parabéns, seu site está rodando. Para ver ele live, visite:
 
    ```https
      https://<your-username>.github.io/home
    ```
 
-10. To change the thumbnail image:
+Tendo problemas? Entre em contato! hashirshoaeb@gmail.com.
 
-    - Navigate to the "public" folder.  
-    - There you will see "social-image.png".  
-    - Delete it.   
-    - Take a screenshot of your version and rename it "social-image.png" and place it there.  
-    
-   Next time if you make changes, repeat from step 8.
+## Contribuindo 🙌
 
-Facing issues? Feel free to contact at hashirshoaeb@gmail.com.
+Pull requests são bem vindas. Para grandes mudanças abra um issue antes para discutir o que você gostaria de mudar.
 
-## Contributing 🙌
+## Problemas
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Se você gostaria de contribuir, esses são os problemas que você pode resolver:
 
-## Issues
-
-If anyone is looking to make some contribution, the following are issues that you can solve:
-
-- [ ] UI improvements
-- [ ] Code optimization
+- [ ] Melhorias na UI
+- [ ] Otimização do código
 - [x] Routing
 - [ ] SEO
 
+## Próximas Features / Melhorias 🔗
+
+- [x] Botão e lugar para currículo.
+- [x] Opção de adicionar ou não a imagem de perfil do instagram.
+- [x] Número de projetos que serão mostrados no website.
+- [x] Se o número de projetos for zero, esconder a aba Projetos recentes.
+- [ ] Página de blogs.
+- [ ] Currículo opicional
+
 ## Showcase 🚀
 
-Have you changed something in the code to create your own version? Feel free to share with me, I will list them in this space.
+Você mudou algo no seu código para fazer sua própria versão? Fique a vontade para compartilhar comigo. Vou ouvir neste espaço
 
 <table>
   <tr>
@@ -181,18 +182,18 @@ Have you changed something in the code to create your own version? Feel free to 
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/anaashrafi/home/">
-        <img src="READMEdocs/anaashrafi-github-io-home.gif" width="300px" alt="" />
+      <a href="https://github.com/ishaan-m/home/">
+        <img src="READMEdocs/ishaan-m-github-io-home.gif" width="300px" alt="" />
         <br />
-        <sub><b>Ana Ashrafi</b></sub>
+        <sub><b>Ishaan Manudhane</b></sub>
       </a>
       <br />
     </td>
     <td align="center">
-      <a href="https://github.com/jefferyjohn/home/">
-        <img src="READMEdocs/jefferyjohn-github-io-home.gif" width="300px" alt="" />
+      <a href="https://github.com/meenams/home/">
+        <img src="READMEdocs/meenams-github-io-home.gif" width="300px" alt="" />
         <br />
-        <sub><b>Jeffery John</b></sub>
+        <sub><b>Meena Muthusubramanian</b></sub>
       </a>
       <br />
     </td>
@@ -210,8 +211,59 @@ Have you changed something in the code to create your own version? Feel free to 
 ## Versão em Português :brazil:
 
 Esse projeto foi traduzido para português! Se você gostou dele e quer criar a sua própria versão, confira o repositório do [@tashima42](https://github.com/tashima42) em [https://github.com/Tashima42/home](https://github.com/Tashima42/home).
-Novas contribuições e revisões na tradução são muito bem vindas!
+Novas contribuições e revisões na tradução são muito bem vindas! 
 
-## Stargazers over time
+## Contributors ✨
+
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://www.facebook.com/hashir.shoaeb">
+        <img src="https://avatars2.githubusercontent.com/u/35165481?v=4" width="100px" alt="" />
+        <br />
+        <sub><b>Hashir Shoaib</b></sub>
+      </a>
+      <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/iprithvitharun">
+        <img src="https://avatars2.githubusercontent.com/u/58725708?v=4" width="100px" alt="" />
+        <br />
+        <sub><b>Prithvi Tharun</b></sub>
+      </a>
+      <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/CodyJasonBennett">
+        <img src="https://avatars3.githubusercontent.com/u/23324155?s=460&v=4" width="100px" alt="" />
+        <br />
+        <sub><b>Cody Bennett</b></sub>
+      </a>
+      <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/yonis9">
+        <img src="https://avatars3.githubusercontent.com/u/42126841?s=460" width="100px" alt="" />
+        <br />
+        <sub><b>Yoni Sisso</b></sub>
+      </a>
+      <br />
+    </td>
+    <td align="center">
+      <a href="https://github.com/mallikarjuna-sharma">
+        <img src="https://avatars3.githubusercontent.com/u/40210749?s=460" width="100px" alt="" />
+        <br />
+        <sub><b>Mallikarjuna Sharma</b></sub>
+      </a>
+      <br />
+    </td>
+  </tr>
+</table>
+
+## Licença 📄
+
+[LGPL-3.0](https://www.gnu.org/licenses/lgpl-3.0.en.html)
+
+## Stargazers ao longo do tempo
 
 [![Stargazers over time](https://starchart.cc/hashirshoaeb/home.svg)](https://starchart.cc/hashirshoaeb/home)
