@@ -19,7 +19,7 @@ function Skills({ heading, hardSkills, softSkills }) {
     skillsTabRef
   );
   return (
-    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="skills">
+    <Jumbotron ref={skillsTabRef} fluid className="bg-white m-0" id="habilidades">
       <Container className="p-5 ">
         <h2 ref={skillsTabRef} className="display-4 pb-5 text-center">
           {heading}
@@ -32,7 +32,7 @@ function Skills({ heading, hardSkills, softSkills }) {
           <Tab
             tabClassName="skills-tab lead"
             eventKey="hard-skills"
-            title="Technical Skills"
+            title="Competências"
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={hardSkills} isScrolled={isScrolled} />
@@ -41,7 +41,7 @@ function Skills({ heading, hardSkills, softSkills }) {
           <Tab
             tabClassName="skills-tab lead"
             eventKey="soft-skills"
-            title="Soft Skills"
+            title="Habilidades Interpessoais"
           >
             <Row className="pt-3 px-1">
               <SkillsTab skills={softSkills} isScrolled={isScrolled} />

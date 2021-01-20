@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 import useResizeObserver from "../hooks/useResizeObserver";
 import Navbar from "react-bootstrap/Navbar";
@@ -39,8 +38,8 @@ const Navigation = React.forwardRef((props, ref) => {
       }`}
       expand="lg"
     >
-      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#home"}>
-        {`<${mainBody.firstName} />`}
+      <Navbar.Brand className="brand" href={process.env.PUBLIC_URL + "/#inicio"}>
+        {`${mainBody.firstName}`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
       <Navbar.Collapse id="basic-navbar-nav">
@@ -53,33 +52,25 @@ const Navigation = React.forwardRef((props, ref) => {
           {repos.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#projects"}
+              href={process.env.PUBLIC_URL + "/#projetos"}
             >
-              Projects
+              Projetos
             </Nav.Link>
           )}
-          <Nav.Link
-            className="nav-link lead"
-            href={about.resume}
-            target="_blank"
-            rel="noreferrer noopener"
-          >
-            Resume
-          </Nav.Link>
           {about.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#aboutme"}
+              href={process.env.PUBLIC_URL + "/#sobre"}
             >
-              About
+              Sobre
             </Nav.Link>
           )}
           {skills.show && (
             <Nav.Link
               className="nav-link lead"
-              href={process.env.PUBLIC_URL + "/#skills"}
+              href={process.env.PUBLIC_URL + "/#habilidades"}
             >
-              Skills
+              Habilidades
             </Nav.Link>
           )}
         </Nav>

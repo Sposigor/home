@@ -5,7 +5,6 @@ import {
   mainBody,
   about,
   repos,
-  leadership,
   skills,
   getInTouch,
 } from "./editable-stuff/config.js";
@@ -18,7 +17,6 @@ import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
 
 const Home = React.forwardRef((props, ref) => {
   return (
@@ -34,9 +32,6 @@ const Home = React.forwardRef((props, ref) => {
         <AboutMe
           heading={about.heading}
           message={about.message}
-          link={about.imageLink}
-          imgSize={about.imageSize}
-          resume={about.resume}
         />
       )}
       {repos.show && (
@@ -45,14 +40,6 @@ const Home = React.forwardRef((props, ref) => {
           username={repos.gitHubUsername}
           length={repos.reposLength}
           specfic={repos.specificRepos}
-        />
-      )}
-      {leadership.show && (
-        <Leadership
-          heading={leadership.heading}
-          message={leadership.message}
-          img={leadership.images}
-          imageSize={leadership.imageSize}
         />
       )}
       {skills.show && (
